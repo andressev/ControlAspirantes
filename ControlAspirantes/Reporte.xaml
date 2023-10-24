@@ -8,7 +8,7 @@
         Title="Reporte" Height="450" Width="800">
     <Grid>
           <ComboBox Name="cbProgramas" HorizontalAlignment="Left" Margin="21,42,0,0"
-VerticalAlignment="Top" Width="191"/>
+VerticalAlignment="Top" Width="191" Loaded="cbProgramas_Loaded"/>
           <Label Content="Filtrar por: " HorizontalAlignment="Left" Margin="21,16,0,0"
 VerticalAlignment="Top"/>
           <Button Name="bGenerar" Content="Generar Reporte" HorizontalAlignment="Left"

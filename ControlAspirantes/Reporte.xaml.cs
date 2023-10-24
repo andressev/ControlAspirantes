@@ -31,7 +31,18 @@ namespace ControlAspirantes
 
 		private void bGenerar_Click(object sender, RoutedEventArgs e)
 		{
+			Alumno a = new Alumno((string)cbProgramas.SelectedItem);
+			dGReporte.ItemsSource = a.buscarAlumno((string)cbProgramas.SelectedItem); 
+		}
 
+		private void cbProgramas_Loaded(object sender, RoutedEventArgs e)
+		{
+			cbProgramas.Items.Add("Compu");
+			cbProgramas.Items.Add("Datos");
+			cbProgramas.Items.Add("Mate");
+			cbProgramas.Items.Add("Negocios");
+			cbProgramas.Items.Add("RI");
+			cbProgramas.Items.Add("Eco");
 		}
 	}
 }

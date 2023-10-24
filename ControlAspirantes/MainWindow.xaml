@@ -36,9 +36,9 @@ Text="" Name="tbFechaDeNacimiento" VerticalAlignment="Top" Width="120"/>
           <TextBox HorizontalAlignment="Left" Height="23" Margin="163,177,0,0" TextWrapping="Wrap"
 Text="" Name="tbCorreo" VerticalAlignment="Top" Width="120"/>
           <ComboBox Name="cbPrograma" HorizontalAlignment="Left" Margin="164,229,0,0"
-VerticalAlignment="Top" Width="223"/>
+VerticalAlignment="Top" Width="223" Loaded="cbPrograma_Loaded"/>
           <ComboBox Name="cbGrado" HorizontalAlignment="Left" Margin="164,205,0,0"
-VerticalAlignment="Top" Width="120"/>
+VerticalAlignment="Top" Width="120" Loaded="cbGrado_Loaded"/>
           <Button Name="bAlta" Content="Alta" HorizontalAlignment="Left" Margin="66,279,0,0"
 VerticalAlignment="Top" Width="75" Click="bAlta_Click" />
           <Button Name="bModificacion" Content="Modificacion" HorizontalAlignment="Left"

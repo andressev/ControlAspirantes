@@ -55,7 +55,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Alumno.cs" />
     <Compile Include="Conexion.cs" />
+    <Compile Include="dbAspirantesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbAspirantesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbEstudiantesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbEstudiantesDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reporte.xaml.cs">
       <DependentUpon>Reporte.xaml</DependentUpon>
     </Compile>
@@ -101,6 +112,28 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="dbAspirantesDataSet.xsc">
+      <DependentUpon>dbAspirantesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbAspirantesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbAspirantesDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbAspirantesDataSet.xss">
+      <DependentUpon>dbAspirantesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbEstudiantesDataSet.xsc">
+      <DependentUpon>dbEstudiantesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbEstudiantesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbEstudiantesDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbEstudiantesDataSet.xss">
+      <DependentUpon>dbEstudiantesDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

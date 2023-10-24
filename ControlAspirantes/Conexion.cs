@@ -14,7 +14,7 @@ namespace ControlAspirantes
 			SqlConnection cnn;
 			try
 			{
-				cnn = new SqlConnection("Data Source=CC101-23\\SQLADMIN;Initial Catalog=dbAspirantes;User ID=sa;Password=sqladmin21");
+				cnn = new SqlConnection("Data Source=CC101-23\\SQLADMIN;Initial Catalog=dbEstudiantes;User ID=sa;Password=sqladmin21");
 				cnn.Open();
 				//MessageBox.Show("conectado");
 			}
