@@ -56,6 +56,11 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Alumno.cs" />
+    <Compile Include="bdEstudiantesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdEstudiantesDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Conexion.cs" />
     <Compile Include="dbAspirantesDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -112,6 +117,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="bdEstudiantesDataSet.xsc">
+      <DependentUpon>bdEstudiantesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bdEstudiantesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdEstudiantesDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdEstudiantesDataSet.xss">
+      <DependentUpon>bdEstudiantesDataSet.xsd</DependentUpon>
+    </None>
     <None Include="dbAspirantesDataSet.xsc">
       <DependentUpon>dbAspirantesDataSet.xsd</DependentUpon>
     </None>

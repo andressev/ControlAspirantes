@@ -41,6 +41,11 @@ namespace ControlAspirantes
 		{
 			
 		}
+		public Alumno(string nombre, string interes)
+		{
+			this.nombre=nombre;
+			this.interes=	interes; ;
+		}
 		public int altaAlumno(Alumno a)
 		{
 			int resp = 0;
@@ -79,5 +84,14 @@ namespace ControlAspirantes
 			return list;
 
 		}
+		public int modificar(Alumno a)
+		{
+			int res = 0;
+			SqlConnection con = Conexion.conectarBD();
+			SqlCommand cmd = new SqlCommand(String.Format("UPDATE Estudiante SET interes= '{0}' WHERE nombre = '{1}'", a.interes, a.nombre), con); 
+            res = cmd.ExecuteNonQuery();
+			return res;
+		}
+
 	}
 }

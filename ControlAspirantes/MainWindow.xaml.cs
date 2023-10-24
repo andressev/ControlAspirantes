@@ -27,6 +27,9 @@ namespace ControlAspirantes
 
 		private void bModificacion_Click(object sender, RoutedEventArgs e)
 		{
+			Modificacion m = new Modificacion();
+			this.Hide();
+			m.Show(); 
 
 		}
 
@@ -55,7 +58,7 @@ namespace ControlAspirantes
 
 		private void button_Click(object sender, RoutedEventArgs e)
 		{
-
+			this.Close();
 		}
 
 		private void cbGrado_Loaded(object sender, RoutedEventArgs e)

@@ -26,6 +26,9 @@ namespace ControlAspirantes
 
 		private void bRegresar_Click(object sender, RoutedEventArgs e)
 		{
+			MainWindow w = new MainWindow();
+			this.Hide();
+			w.Show();
 
 		}
 
